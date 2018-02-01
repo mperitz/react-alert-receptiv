@@ -1,20 +1,12 @@
-# react-alert
+# react-alert-receptiv
 
-> A simple react alert (toaster style) component.
-
-[![travis build](https://img.shields.io/travis/schiehll/react-alert.svg?style=flat-square)](https://travis-ci.org/schiehll/react-alert)
-[![Coveralls branch](https://img.shields.io/coveralls/schiehll/react-alert/master.svg?style=flat-square)](https://coveralls.io/github/schiehll/react-alert?branch=master)
-[![version](https://img.shields.io/npm/v/react-alert.svg?style=flat-square)](http://npm.im/react-alert)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-
-## Demo
-
-You can see a live demo [here](http://schiehll.github.io/react-alert/).
+> A simple react alert (toaster style) component for specific use by Receptiv.
+> Modified slighly from https://www.npmjs.com/package/react-alert
 
 ## Installation
 
 ```bash
-$ npm install react-alert
+$ npm install react-alert-receptiv
 ```
 
 ## Usage
@@ -23,7 +15,7 @@ To use it, you have to import the `AlertContainer` component, like this:
 
 ```js
 import React, {Component} from 'react'
-import AlertContainer from 'react-alert'
+import AlertContainer from 'react-alert-receptiv'
 
 export default class App extends Component {
   alertOptions = {
@@ -91,6 +83,7 @@ When you call `show`, `info`, `success` and `error` method, you can include the 
   time: 0, // the time in miliseconds to the alert close itself, use 0 to prevent auto close (apply to this alert only), default is 5000
   icon: <img src="path/to/some/img/32x32.png" />, // the icon to show in the alert, if none is given the default of each type will be showed
   onClose: () => {} // the function called when message is closed
+  onOpen: () => {} // the function called when message is opened
 }
 ```
 
