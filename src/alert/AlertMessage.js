@@ -27,6 +27,7 @@ class AlertMessage extends Component {
     theme: PropTypes.oneOf(['dark', 'light']),
     time: PropTypes.number,
     lastAlert: PropTypes.bool,
+    background: PropTypes.bool,
     onRemoveAlert: PropTypes.func
   }
 
@@ -46,10 +47,10 @@ class AlertMessage extends Component {
   }
 
   render () {
-    const {message, theme, icon, type, boxShadow, lastAlert} = this.props
+    const {message, theme, icon, type, boxShadow, lastAlert, background} = this.props
     const dark = theme === 'dark'
     return (
-      <Alert glam={{dark, boxShadow, lastAlert}}>
+      <Alert glam={{dark, boxShadow, lastAlert, background}}>
         <IconPlaceholder>
           {icon || <Icon glam={{type}} />}
         </IconPlaceholder>
