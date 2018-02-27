@@ -17,6 +17,7 @@
     "react-component"
   ],
   "scripts": {
+    "prepublishOnly": "yarn run build",
     "build": "babel src --out-dir dist --ignore *.spec.js,*.snap",
     "build:watch": "babel src --out-dir dist --watch --ignore *.spec.js,*.snap",
     "lint": "standard --fix",
