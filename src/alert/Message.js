@@ -1,11 +1,11 @@
-import glamorous from 'glamorous/dist/glamorous.cjs.tiny'
+import styled from 'styled-components';
 
-const Message = glamorous('div')({
-  flex: 3,
-  textAlign: 'center',
-  textTransform: 'uppercase',
-  padding: '8px 10px',
-  marginRight: '50px'
-})
+const Message = styled.div`
+  flex: 3;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  margin-right: 50px;
+`;
 
-export default Message
+export default Message;

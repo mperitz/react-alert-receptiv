@@ -50,15 +50,15 @@ class AlertMessage extends Component {
     const {message, theme, icon, type, boxShadow, lastAlert, background} = this.props
     const dark = theme === 'dark'
     return (
-      <Alert glam={{dark, boxShadow, lastAlert, background}}>
+      <Alert dark={dark} boxShadow={boxShadow} background={background} lastAlert={lastAlert}>
         <IconPlaceholder>
-          {icon || <Icon glam={{type}} />}
+          {icon || <Icon type={type} />}
         </IconPlaceholder>
         <Message>
           {message}
         </Message>
         <Close
-          glam={{dark}}
+          dark={dark}
           onClick={this._removeItself}
         />
       </Alert>
