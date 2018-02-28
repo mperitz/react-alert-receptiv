@@ -82,7 +82,7 @@ class AlertContainer extends Component {
   render () {
     const {position, offset, transition} = this.props
     return (
-      <Container glam={{position, offset}}>
+      <Container position={position} marginOffset={offset}>
         <CSSTransitionGroup
           transitionName={transition}
           transitionEnterTimeout={250}
