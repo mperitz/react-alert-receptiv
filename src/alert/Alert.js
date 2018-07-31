@@ -9,6 +9,7 @@ const Alert = glamorous('div')({
   fontSize: '11px',
   position: 'relative',
   borderTop: '0.5px solid white',
+  marginBottom: '5px',
   '&.scale-enter': {
     transform: 'scale(0)'
   },
